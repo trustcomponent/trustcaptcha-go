@@ -1,3 +1,5 @@
+![Go module version](https://img.shields.io/github/v/tag/trustcomponent/trustcaptcha-go?label=go%20module&sort=semver)
+
 # TrustCaptcha for Go — GDPR-compliant, privacy-first CAPTCHA
 
 Protect websites and apps against bots and spam with a privacy-first, EU-hosted CAPTCHA solution.
@@ -48,7 +50,7 @@ if err != nil {
 ```go
 // Do something with the verification result
 if !verificationResult.VerificationPassed || verificationResult.Score > 0.5 {
-  log.Println("Verification failed, or bot score is higher than 0.5 – this could indicate a bot.")
+  log.Println("Verification failed or bot score > 0.5 – possible automated request.")
 }
 ```
 
